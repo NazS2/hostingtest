@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app="firechat">
+  <head>
+    <link rel="stylesheet" href="style/example.css"/>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="app/firechat.js"></script>
+  </head>
+  <body ng-controller="fireComp">
+    <div class="c l-demo-container">
+      <header>Firebase Chat Demo</header>
+      <div class="c-toolbar">
+        <label for="nameInput">Username:</label>
+        <input type="text" id="nameInput" placeholder="enter a username..."/>
+      </div>
+      <ul class="c-messages">
+         <li><strong class="c-username">John Doe</strong>Who am I?</li>
+         <li><strong class="c-username">Homer Simpson</strong>Doh!</li>
+      </ul>
+      <footer>
+        <input type="text" id="messageInput"  placeholder="Type a message..." ng-keydown="alert('test')"/>
+      </footer>
+    </div>
+  </body>
+</html>
